@@ -4,7 +4,7 @@ aside {grid-area: aside}
 main {grid-area: main;}
 footer {grid-area: footer;}
 .hobbies {grid-area: hobbies;}
-
+.hobimg {grid-area: hobimg;}
 
 .container {
     display: grid;
@@ -12,11 +12,12 @@ footer {grid-area: footer;}
         "header header"
         "aside aside"
         "main main"
-        "hobbies footer";
+        "hobbies hobimg"
+        "footer footer";
 }
 
 
-/* header, aside, main, .hobbies, footer { border: 2px solid red; } */
+header, aside, main, .hobbies, footer, .hobimg { border: 2px solid red; }
 
 
 
@@ -26,9 +27,12 @@ body {
     background: lightgray;
     border:20px double black;
     margin: 30px;
+  
 }
+
 h1 {
     text-align: center;
+   
    
 }
 #p1 {
@@ -43,6 +47,8 @@ aside {
 
 main {
     margin:30px;
+    overflow-wrap: normal;
+    
 }
 
 ul {
@@ -54,8 +60,46 @@ ul {
     margin:30px;
 }
 
+.hobimg {
+    width:auto;    
+    max-width: 100%;
+    height: auto;
+    padding-left:20px
+}
+
 footer {
     text-align: center;
     padding: 60px;
     margin:50px;
+}
+
+@media (max-width: 576px) {
+    .hobimg {
+        display: none;
+    }
+    body {
+        border:none;
+       
+    }
+    
+}
+
+@media (max-width: 800px) {
+    /* .hobimg {
+        display: none;
+    } */
+    /* body {
+        border:none;
+       
+    } */
+    .container {
+        display: grid;
+         grid-template-areas: 
+            "header"
+            "aside"
+            "main"
+            "hobbies"
+            "hobimg"
+            "footer";
+    }
 }
