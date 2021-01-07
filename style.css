@@ -12,7 +12,7 @@ footer {grid-area: footer;}
         "header header"
         "aside aside"
         "main main"
-        "hobbies hobimg"
+        "hobbies hobbies"
         "footer footer";
 }
 
@@ -55,17 +55,19 @@ ul {
     list-style-type:circle;
     margin:30px;
 }
-
+h2{
+    padding-left:20px;
+}
 .hobbies {
     margin:30px;
 }
 
-.hobimg {
+/* .hobimg {
     width:auto;    
     max-width: 100%;
     height: auto;
-    padding-left:20px
-}
+    padding: 20px;
+} */
 
 footer {
     text-align: center;
@@ -74,9 +76,10 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .hobimg {
-        display: none;
-    }
+    /* ul img {
+         display: none;
+    } */
+
     body {
         border:none;
        
@@ -85,13 +88,9 @@ footer {
 }
 
 @media (max-width: 800px) {
-    /* .hobimg {
+    ul img {
         display: none;
-    } */
-    /* body {
-        border:none;
-       
-    } */
+   }
     .container {
         display: grid;
          grid-template-areas: 
