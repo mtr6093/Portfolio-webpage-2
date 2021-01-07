@@ -1,0 +1,61 @@
+
+header {grid-area: header}
+aside {grid-area: aside}
+main {grid-area: main;}
+footer {grid-area: footer;}
+.hobbies {grid-area: hobbies;}
+
+
+.container {
+    display: grid;
+     grid-template-areas: 
+        "header header"
+        "aside aside"
+        "main main"
+        "hobbies footer";
+}
+
+
+header, aside, main, .hobbies, footer { border: 2px solid red; }
+
+
+
+
+
+body {
+    background: lightgray;
+    border:3px solid black;
+    margin: 30px;
+}
+h1 {
+    text-align: center;
+   
+}
+#p1 {
+    text-align: center;
+    color: midnightblue;
+    font-size: x-large;
+    
+}
+aside {
+    padding: 10px;
+}
+
+main {
+    margin:30px;
+}
+
+ul {
+    list-style-type:circle;
+    margin:30px;
+}
+
+.hobbies {
+    margin:30px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    margin:30px;
+}
