@@ -16,7 +16,7 @@ footer {grid-area: footer;}
 }
 
 
-header, aside, main, .hobbies, footer { border: 2px solid red; }
+/* header, aside, main, .hobbies, footer { border: 2px solid red; } */
 
 
 
@@ -24,7 +24,7 @@ header, aside, main, .hobbies, footer { border: 2px solid red; }
 
 body {
     background: lightgray;
-    border:3px solid black;
+    border:20px double black;
     margin: 30px;
 }
 h1 {
@@ -56,6 +56,6 @@ ul {
 
 footer {
     text-align: center;
-    padding: 50px;
-    margin:30px;
+    padding: 60px;
+    margin:50px;
 }
