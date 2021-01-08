@@ -1,11 +1,10 @@
 
-header {grid-area: header}
-aside {grid-area: aside}
+header {grid-area: header;}
+aside {grid-area: aside;}
 main {grid-area: main;}
 footer {grid-area: footer;}
-/* .hobbies {grid-area: hobbies;} */
-.hob1 {grid-area: hob1;}
-.hob2 {grid-area: hob2;}
+.hobbies {grid-area: hobbies;}
+
 
 .container {
     display: grid;
@@ -13,12 +12,12 @@ footer {grid-area: footer;}
         "header header"
         "aside aside"
         "main main"
-        "hob1 hob2"
+        "hobbies hobbies"
         "footer footer";
 }
 
 
-header, aside, main, footer, .hob1, .hob2, .hobbies { border: 2px solid red; }
+header, aside, main, footer, .hob1, .hob2,.hob3, .hob4, .hobbies { border: 2px solid red; }
 
 
 body {
@@ -65,14 +64,15 @@ h2{
     padding: 10px;
     display: flex;
     align-content: space-between;
+    flex-wrap: wrap;
 }
-.hob1 {
+/* .hob1 {
     padding: 30px;
 }
 
 .hob2 {
     padding: 30px;
-}
+} */
 
 footer {
     text-align: center;
@@ -85,8 +85,7 @@ footer {
         "header"
         "aside"
         "main"
-        "hob1"
-        "hob2"
+        "hobbies"
         "footer"
         ;
     }
