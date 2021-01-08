@@ -17,16 +17,21 @@ footer {grid-area: footer;}
 }
 
 
-header, aside, main, footer, .git, .email, .hob1, .hob2,.hob3, .hob4, .hobbies { border: 2px solid red; }
+/* header, aside, main, footer, .git, .email, .hob1, .hob2,.hob3, .hob4, .hobbies { border: 2px solid red; } */
 
-
+.gradient {
+    background-color: black;
+    background-image: linear-gradient( black, grey);
+}
 body {
     background: lightgray;
     border:20px double black;
     margin: 30px;
+    color: white
 }
-header {background-color: black;}
-
+header{ 
+    font-style: italic;
+}
 h1 {
     text-align: center;
     
@@ -35,7 +40,6 @@ h1 {
 
 #p1 {
     text-align: center;
-    color: midnightblue;
     font-size: x-large;
 }
 aside {
@@ -45,9 +49,9 @@ aside {
 main {
     margin:30px;
     overflow-wrap: normal;
-    
 }
 
+a {color:lightblue;}
 ul {
     list-style-type:circle;
     margin:30px;
@@ -59,9 +63,9 @@ ul img {
 }
 
 .hobbies {
-    padding: 10px;
+    /* padding: 10px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .email {
@@ -71,13 +75,13 @@ ul img {
     padding: 25px;
 }
 footer {
-    display: flex;
-    
+    display: flex;    
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px;
     margin:50px;
 }
+
 @media (max-width: 576px) {
     .container {
         grid-template-areas:
